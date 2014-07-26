@@ -63,7 +63,7 @@ public class WorldGuardVehicleListener implements Listener {
             if (!plugin.getGlobalRegionManager().hasBypass(player, world)
                     && !set.canBuild(localPlayer)
                     && !set.allows(DefaultFlag.DESTROY_VEHICLE, localPlayer)) {
-                player.sendMessage(ChatColor.DARK_RED + "You don't have permission to destroy vehicles here.");
+                player.sendMessage(ChatColor.RED + "No tienes permisos para destruir vehículos aquí.");
                 event.setCancelled(true);
                 return;
             }
